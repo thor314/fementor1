@@ -1,28 +1,56 @@
-/*  */
 body {
   background-image: url("assets/bg-mobile.png");
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 .top-header {
   background-color: hsl(228, 56%, 26%);
   border-radius: 1rem 4rem 1rem 1rem;
-  /* content:  */
-
-/* - Pale Blue: hsl(243, 100%, 93%)
-- Grayish Blue: hsl(229, 7%, 55%)
-- Dark Blue: hsl(228, 56%, 26%)
-- Very Dark Blue: hsl(229, 57%, 11%) */
-}
-
-h1::before {
-  content: url("assets/logo.svg")
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  padding: 3rem;
 }
 
 .icons {
   display: flex;
   flex-flow: row nowrap;
   /* justify-content: space-between; */
+  gap: 1.5rem;
+}
+
+.icons button {
+  --icon-size: 3rem;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1.2;
+}
+
+.icons button svg {
+  scale: 0.9;
+}
+
+.top-storage {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
   gap: 1rem;
+  padding: 3rem;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 #root {
