@@ -5,8 +5,6 @@ import TopHeader from "./components/TopHeader";
 import TopStorage from "./components/TopStorage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <main className="App">
       <TopHeader />

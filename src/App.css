@@ -1,6 +1,8 @@
 body {
   background-image: url("assets/bg-mobile.png");
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  /* font-size: 14; */
 }
 
 main {
@@ -27,6 +29,7 @@ main {
 
 .icons button {
   --icon-size: 3rem;
+  background-color: hsl(229, 57%, 11%);
   height: var(--icon-size);
   width: var(--icon-size);
   padding: 0;
@@ -46,11 +49,56 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  padding: 3rem;
+  padding: 2rem 1rem 2rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .bold {
+  font-weight: bolder;
+  font-style: oblique;
+  font-weight: 900;
+  /* font-size: large; */
+  /* color: red; */
+}
+
+/* - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
+
+.storage-left {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 4rem;
+  transform: translateY(4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.storage-left-num {
+  gap: 0;
+  font-size: xx-large;
   font-weight: 700;
+  color: black;
+}
+
+#gb-left-num {
+  font-size: xx-large;
+  font-weight: 700;
+  color: black;
+}
+
+#gb-left-final-num {
+  font-size: xx-large;
+  font-weight: 700;
+  color: black;
+}
+
+#gb-left-text {
+  font-size: 8;
+  color: grey;
+  font-weight: 400;
 }
 
 #root {
@@ -58,40 +106,4 @@ main {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
