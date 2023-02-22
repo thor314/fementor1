@@ -1,3 +1,28 @@
+/*  */
+body {
+  background-image: url("assets/bg-mobile.png");
+}
+
+.top-header {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 1rem 4rem 1rem 1rem;
+  /* content:  */
+
+/* - Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) */
+}
+
+h1::before {
+  content: url("assets/logo.svg")
+}
+
+header-icons {
+  display: flex;
+
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;

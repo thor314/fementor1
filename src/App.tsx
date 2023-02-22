@@ -1,5 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+// import reactLogo from "./assets/react.svg";
+import {ReactComponent as Folder} from "./assets/icon-folder.svg";
 import "./App.css";
 
 function App() {
@@ -9,11 +10,16 @@ function App() {
     <div className="App">
       <main>
         <div className="top-header">
-          {/* todo icon */}
-          <h1>Fylo</h1>
+          {/* before */}
+          <h1></h1>
           <ul className="header-icons">
             {/* todo icons */}
-            <li>*</li>
+
+            <li>
+              {/* {icon_folder} */}
+              <object data={icon_folder} type="image/svg+xml" />
+
+            </li>
             <li>*</li>
             <li>*</li>
           </ul>
