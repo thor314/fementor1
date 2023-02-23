@@ -3,12 +3,18 @@ export default function TopStorage() {
   /* - Weights: 400, 700 */
   return (
     <div className="top-storage">
-      <label htmlFor="storage_usage">
+      <p>
         You’ve used <span className="bold">815 GB</span> of your storage
-      </label>
-      <meter id="storage_usage" value="815" min="0" max="1000" />
-      {/* temp */}
-      {/* <p>185 GB Left 0 GB 1000 GB</p> */}
+      </p>
+      <div id="storage-meter">
+        <div id="storage-bar" style={{ ["width" as string]: getWidth() }}>
+          <div id="storage-meter-circle"></div>
+        </div>
+      </div>
+      <div id="storage-labels">
+        <div>0 GB</div>
+        <div>1000 GB</div>
+      </div>
       <div className="storage-left">
         <p className="storage-left-num">
           18
@@ -18,4 +24,8 @@ export default function TopStorage() {
       </div>
     </div>
   );
+}
+
+function getWidth(): string {
+  return "82%";
 }
